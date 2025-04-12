@@ -6,62 +6,63 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Svitlana Shkribliak">
+    <link rel="stylesheet" href="css/index.css">
 </head>
 
-<body style="background-color: hsl(240, 21%, 95%);">
-    <img src="images/my_photo.JPG" alt="my photo" style="width: 150px; height: 150px; border-radius: 50%;">
-
-    <h1>Svitlana Shkribliak</h1>
+<body>
+    <div>
+        <img src="images/my_photo.JPG" alt="my photo" id="photo">
+        <span>
+            <h1 id="name">Svitlana Shkribliak</h1>
+        </span>
+    </div>
 
     <section id="about">
         <h2>About</h2>
-        <p>Software Quality Assurance professional with 5 years of experience in manual testing, developing and maintaining test plans and test cases within the game development industry in an Agile environment. Proficient in test automation using Selenium WebDriver with Java (TestNG) and well-versed in SQL. Certified Tester (ISTQB Foundation Level). Good knowledge of JavaScript programming language.
+        <p>Software Quality Assurance professional with 5 years of experience in manual testing, developing and
+            maintaining test plans and test cases within the game development industry in an Agile environment.
+            Proficient in test automation using Selenium WebDriver with Java (TestNG) and well-versed in SQL. Certified
+            Tester (ISTQB Foundation Level). Good knowledge of JavaScript programming language.
         </p>
     </section>
 
     <section id="experience">
         <h2>Experience</h2>
-        <ul>
-            <li><strong>Programming:</strong></li>
+        <div class="job" id="current-job">
+            <span class="event-date">Jan 2024 – Current</span>
+            <h4 class="position">Software Quality Assurance Engineer</h4>
+            <p class="company">ARxIUM, Buffalo Grove, IL</p>
             <ul>
-                <li>JavaScript</li>
-                <li>HTML</li>
-                <li>SQL</li>
+                <li>Develop Test Plans, Test Suites, and Test Cases using Azure DevOps Server to ensure thorough test
+                    coverage and traceability</li>
+                <li>Performed backend testing on Oracle SQL databases using SQL queries to validate data integrity, test
+                    stored procedures, and ensure accurate data flow</li>
+                <li>Test software for pharmacy automation equipment, including systems for medication packaging,
+                    dispensing, and inventory management, ensuring functionality, accuracy, and reliability in clinical
+                    workflows</li>
             </ul>
-            <li><strong>Version Control:</strong></li>
+        </div>
+        <div class="job" id="past-job">
+            <span class="event-date">Aug 2019 – Oct 2024</span>
+            <h4 class="position">Software Quality Assurance</h4>
+            <p class="company">Nordcurrent, Warsaw, Poland</p>
             <ul>
-                <li>GitHub</li>
+                <li>Created guidance for using and running automation tests, reducing onboarding time by an average of
+                    35%
+                </li>
+                <li>Executed functional, cross-platform, regression, and server/client testing of games on iOS, Android,
+                    Fire OS, and Windows platforms</li>
+                <li>Increased the Google Play “Crash free rate” from 93% to 98%, helping to improve the visibility of a
+                    leading project in the Google Play Store</li>
             </ul>
-            <li><strong>Automation tools:</strong></li>
-            <ul>
-                <li>Selenium WebDriver</li>
-                <li>Selenium Grid</li>
-                <li>TestNG</li>
-                <li>Cucumber (BDD)</li>
-            </ul>
-            <li><strong>Bug tracking and test management tools:</strong></li>
-            <ul>
-                <li>Jira</li>
-                <li>Confluence</li>
-                <li>TestLink</li>
-                <li>Zephyr</li>
-            </ul>
-            <li><strong>IDE:</strong></li>
-            <ul>
-                <li>IntelliJ IDEA</li>
-                <li>Visual Studio Code</li>
-            </ul>
-        </ul>
-
+        </div>
     </section>
 
     <section id="connect">
         <h2>Connect</h2>
-        <ul>
-            <li><a href="https://github.com/sshkribliak">GitHub</a></li>
-            <li><a href="https://www.linkedin.com/in/svitlana-shkribliak-b35137237/">LinkedIn</a></li>
-
-        </ul>
+    
+            <span><a href="https://github.com/sshkribliak" target="_blank" rel="noopener noreferrer"><img src="images/github-icon.png" alt="github icon" class="icon"></a></span>
+            <span><a href="https://www.linkedin.com/in/svitlana-shkribliak-b35137237/" target="_blank" rel="noopener noreferrer"><img src="images/linkedin-icon.png" alt="linkedin icon" class="icon"></a></span>
     </section>
 
 </body>
