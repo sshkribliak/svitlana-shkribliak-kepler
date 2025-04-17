@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Delius&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    background-color: #e8f4f6;
+    color: black;
+    font-family: 'Roboto', sans-serif;
+}
+
+span {
+    display: inline-block;
+    vertical-align: top;
+}
+
+
+h2 {
+    font-size: 30px;
+    font-weight: 600;
+    color: #0b4b60;
+    margin: 10px;
+    /* background-color: hsl(206, 44%, 64%); */
+}
+
+p {
+    margin: 10px;
+}
+
+ul {
+    margin: 5px;
+}
+
+.event-date,
+.company,
+.position {
+    font-family: Oxygen, Helvetica, sans-serif;
+}
+
+.event-date {
+    margin: 5px 5px 10px 10px;
+    background-color: rgb(39, 167, 199);
+    font-size: 14px;
+    font-weight: 300;
+    color: white;
+
+}
+
+.position {
+    margin: 5px 5px 1px 10px;
+    color: rgb(34, 34, 34);
+    font-size: 16;
+    font-weight: 700;
+}
+
+.company {
+    margin: 1px 5px 10px 10px;
+    color: rgb(165, 165, 165);
+    font-family: "PT Sans", Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: 300;
+}
+
+.job {
+    /* border: blue solid 1px; */
+    margin-bottom: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color: #f0f8ff;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    /* #c7ebf7; */
+}
+
+.icon{
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+}
+
+
+#photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: 10px;
+}
+
+#name {
+    font-family: "Delius", cursive, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    margin-top: 65px;
+    font-size: 50px;
+    color: #023748;
+}
+
+#about {
+    /*section */
+    text-align: left;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc4c4;
+    background-color: #e6eff7;
+    border-radius: 10px;
+}
+
+#experience{
+    border: 1px solid #ccc4c4;
+    background-color: #e6eff7;
+    border-radius: 10px;
+}
+
+#connect{
+    border: 1px solid #ccc4c4;
+    background-color: #e6eff7;
+    border-radius: 10px;
+    margin: 10px 0px 10px 0px;
+    text-align: center;
+}
+
+
