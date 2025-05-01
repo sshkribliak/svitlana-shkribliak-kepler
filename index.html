@@ -7,15 +7,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Svitlana Shkribliak">
     <link rel="stylesheet" href="css/index.css">
+    <script src="index.js"></script>
 </head>
 
 <body>
-    <div>
-        <img src="images/my_photo.JPG" alt="my photo" id="photo">
-        <span>
-            <h1 id="name">Svitlana Shkribliak</h1>
-        </span>
-    </div>
+    <header>
+        <div class="header-container">
+            <div class="photo-item"><img src="images/my_photo.JPG" alt="my photo" id="photo"></div>
+
+            <div class="name-item">
+                <h1 id="name">Svitlana Shkribliak</h1>
+                <p id="fun-fact">I’m a curious QA enthusiast who loves hunting down bugs and leveling up my skills.
+                    If there’s something new to learn, I’m already on it — with a smile and lots of coffee!</p>
+            </div>
+        </div>
+    </header>
+    <nav class="nav-container">
+        <ul>
+            <li><a href="#name">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#connect">Connect</a></li>
+        </ul>
+    </nav>
 
     <section id="about">
         <h2>About</h2>
@@ -28,41 +43,48 @@
 
     <section id="experience">
         <h2>Experience</h2>
-        <div class="job" id="current-job">
-            <span class="event-date">Jan 2024 – Current</span>
-            <h4 class="position">Software Quality Assurance Engineer</h4>
+        <div class="job">
+            <div class="job-header">
+                <h4 class="position">Software Quality Assurance Engineer</h4>
+                <span class="event-date">Jan 2024 – Current</span>
+            </div>
             <p class="company">ARxIUM, Buffalo Grove, IL</p>
-            <ul>
-                <li>Develop Test Plans, Test Suites, and Test Cases using Azure DevOps Server to ensure thorough test
-                    coverage and traceability</li>
-                <li>Performed backend testing on Oracle SQL databases using SQL queries to validate data integrity, test
-                    stored procedures, and ensure accurate data flow</li>
-                <li>Test software for pharmacy automation equipment, including systems for medication packaging,
-                    dispensing, and inventory management, ensuring functionality, accuracy, and reliability in clinical
-                    workflows</li>
-            </ul>
+            <p class="job-description">Develop test plans in Azure DevOps, perform SQL-based backend testing on Oracle
+                databases, and validate pharmacy automation systems for accuracy and reliability.</p>
         </div>
-        <div class="job" id="past-job">
-            <span class="event-date">Aug 2019 – Oct 2024</span>
-            <h4 class="position">Software Quality Assurance</h4>
+
+        <div class="job">
+            <div class="job-header">
+                <h4 class="position">Software Quality Assurance</h4>
+                <span class="event-date">Aug 2019 – Oct 2024</span>
+            </div>
             <p class="company">Nordcurrent, Warsaw, Poland</p>
-            <ul>
-                <li>Created guidance for using and running automation tests, reducing onboarding time by an average of
-                    35%
-                </li>
-                <li>Executed functional, cross-platform, regression, and server/client testing of games on iOS, Android,
-                    Fire OS, and Windows platforms</li>
-                <li>Increased the Google Play “Crash free rate” from 93% to 98%, helping to improve the visibility of a
-                    leading project in the Google Play Store</li>
-            </ul>
+            <p class="job-description">Ensured the quality and performance of mobile and PC games by executing manual
+                and automated testing, boosting app stability, user purchases, and team efficiency through strategic QA
+                practices and collaboration.</p>
         </div>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <ul></ul>
     </section>
 
     <section id="connect">
         <h2>Connect</h2>
-    
-            <span><a href="https://github.com/sshkribliak" target="_blank" rel="noopener noreferrer"><img src="images/github-icon.png" alt="github icon" class="icon"></a></span>
-            <span><a href="https://www.linkedin.com/in/svitlana-shkribliak-b35137237/" target="_blank" rel="noopener noreferrer"><img src="images/linkedin-icon.png" alt="linkedin icon" class="icon"></a></span>
+
+        <div id="social">
+            <span><a href="https://github.com/sshkribliak" target="_blank" rel="noopener noreferrer"><img
+                        src="images/github-icon.png" alt="github icon" class="icon"></a></span>
+            <span><a href="https://www.linkedin.com/in/svitlana-shkribliak-b35137237/" target="_blank"
+                    rel="noopener noreferrer"><img src="images/linkedin-icon.png" alt="linkedin icon"
+                        class="icon"></a></span>
+        </div>
+
     </section>
 
 </body>
