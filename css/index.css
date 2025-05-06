@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Delius&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
+/* Desktop devices*/
 body {
-    /* background-color: #e8f4f6; */
-    background: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f69d3c);
+    background-color: #f6f2e8;
     color: black;
     font-family: 'Roboto', sans-serif;
 }
@@ -12,27 +12,20 @@ span {
     vertical-align: top;
 }
 
-
 h2 {
     font-size: 30px;
     font-weight: 600;
     color: #0b4b60;
     margin: 10px;
-    /* background-color: hsl(206, 44%, 64%); */
 }
 
 p {
     margin: 10px;
-    width: 90%;
-    /* border: blue solid 1px; */
-    /* padding: 10px; */
 }
 
 ul {
     margin: 5px;
 }
-
-
 
 .icon {
     width: 50px;
@@ -43,10 +36,9 @@ ul {
 .header-container {
     display: flex;
     margin-bottom: 10px;
-    border: 1px solid #ccc4c4;
-    /* background-color: #e6eff7; */
-    background: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f69d3c);
+    background-color: #f6f2e8;
     border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .name-item {
@@ -60,114 +52,96 @@ ul {
 }
 
 .nav-container {
-    border: 1px solid #ccc4c4;
-    /* background-color: #ebf8e1; */
-    background: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f69d3c);
+    background-color: #f6f2e8;
     border-radius: 10px;
     margin-bottom: 10px;
-    position: sticky;
     top: 0;
-    height: 50px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .nav-container ul {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-evenly;
+    gap: 10px;
+    padding: 0;
 }
 
 .nav-container li {
     display: flex;
     padding: 10px 20px;
-    /* background-color: #72b0cb; */
-    background-color: #ebf8e1;
-    /* background: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f69d3c); */
-    border: solid 1px #a3c9ed;
+    background-color: #f6f2e8;
     border-radius: 10px;
-    color:#0b4b60;
+    color: #0b4b60;
 }
-li a{
+
+li a {
     color: #0b4b60;
     font-weight: 700;
+    text-decoration: none;
+    font-size: 20px;
 }
-li a:hover{
+
+li a:hover {
     color: royalblue;
 }
 
-  .event-date,
-  .company,
-  .position {
-      font-family: Oxygen, Helvetica, sans-serif;
-  }
-  
-  .job-header {
+.event-date,
+.company,
+.position {
+    font-family: Oxygen, Helvetica, sans-serif;
+}
+
+.job-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap; 
+    flex-wrap: wrap;
     border-bottom: #ccc 1px dotted;
-  }
-
-  .event-date {
-      /* margin: 5px 5px 10px 10px; */
-      background-color: #99cfe6;
-      /* background: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f69d3c); */
-      font-size: 14px;
-      font-weight: 300;
-      text-align: center;
-      color: black;
-      width: 150px;
-  }
-  
-  .position {
-      margin: 5px 5px 1px 0px;
-      color: rgb(34, 34, 34);
-      font-size: 16;
-      font-weight: 700;
-  }
-  
-  .company {
-      margin: 1px 5px 10px 10px;
-      /* color: rgb(165, 165, 165); */
-      color: black;
-      font-family: "PT Sans", Helvetica, sans-serif;
-      font-size: 12px;
-      font-weight: 300;
-  }
-  
-  .job {
-      margin-bottom: 20px;
-      margin-left: 10px;
-      margin-right: 10px;
-      /* background-color: #f0f8ff; */
-      background-color: #ecf7e4;
-      border: 1px solid #ccc;
-      border-radius: 10px;
-      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-      padding: 15px;
-      /* #c7ebf7; */
-  }
-
-.job-description {
-    /* margin: 10px; */
-    margin-left: 15px;
-    font-style: italic;
-    width: 90%;
 }
 
-.dates {
-    flex: initial;
-    width: 200px;
-    border: 1px solid #d16666;
+.event-date {
+    background-color: #f7f2e6;
+    font-size: 14px;
+    font-weight: 300;
     text-align: center;
-    padding: 10px;
+    color: black;
+    width: 150px;
+}
+
+.position {
+    margin: 5px 5px 1px 0px;
+    color: rgb(34, 34, 34);
+    font-size: 16;
+    font-weight: 700;
+}
+
+.company {
+    margin: 1px 5px 10px 10px;
+    color: black;
+    font-family: "PT Sans", Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: 300;
+}
+
+.job {
+    margin-bottom: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color: #f6f2e8;
+    border-radius: 10px;
+    padding: 15px;
+}
+
+.job-description {
+    margin-left: 15px;
+    font-style: italic;
 }
 
 #photo {
     width: 200px;
     height: 200px;
     border-radius: 50%;
-    /* margin: 5px; */
-
 }
 
 #name {
@@ -190,30 +164,97 @@ li a:hover{
     text-align: left;
     margin-bottom: 10px;
     padding: 10px;
-    border: 1px solid #ccc4c4;
-    background-color: #ebf8e1;
-    /* background: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f69d3c); */
+    background-color: #f6f2e8;
     border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 #experience {
-    border: 1px solid #ccc4c4;
-    background-color: #ebf8e1;
-    /* background: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f69d3c); */
+    background-color: #f6f2e8;
     border-radius: 10px;
     padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 #connect {
-    border: 1px solid #ccc4c4;
-    background-color: #ebf8e1;
-    /* background: linear-gradient(#3f87a6, #f69d3c); */
+    background-color: #f6f2e8;
     border-radius: 10px;
     margin: 10px 0px 10px 0px;
     text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-#social{
-    display: flex;
+#social {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 10px;
     justify-content: center;
+}
+
+/* Mobile devices*/
+
+@media (max-width: 600px) {
+    body {
+        background: #ebece3;
+    }
+
+    h2 {
+        font-size: 20px;
+        color: #022835;
+    }
+
+    li a {
+        color: #022835;
+        font-size: 15px;
+        font-weight: 700;
+    }
+
+    .job {
+        margin: 5px;
+        padding: 10px;
+    }
+
+    .header-container,
+    #about,
+    #experience,
+    #connect,
+    .job,
+    .nav-container,
+    .nav-container li {
+        background: rgb(239, 240, 235);
+    }
+
+    #photo {
+        width: 100px;
+        height: 100px;
+    }
+
+    #name {
+        font-size: 30px;
+        margin-top: 20px;
+        color: #022835;
+    }
+
+    #connect {
+        margin: 5px 0px 5px 0px;
+    }
+
+    .icon {
+        width: 30px;
+        height: 30px;
+        margin: 5px;
+    }
+
+    .event-date {
+        background-color: #ebece3;
+    }
+
+    .nav-container li {
+        padding: 5px;
+    }
+
+    .job {
+        padding: 5px;
+    }
+
 }
