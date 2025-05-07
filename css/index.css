@@ -138,6 +138,13 @@ li a:hover {
     font-style: italic;
 }
 
+.copyright{
+    text-align: center;
+    font-size: 0.9rem;
+    padding: 10px;
+    border-top: 1px solid #ccc;
+}
+
 #photo {
     width: 200px;
     height: 200px;
@@ -174,7 +181,32 @@ li a:hover {
     border-radius: 10px;
     padding: 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
 }
+
+#skills{
+    background-color: #f6f2e8;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#skills ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 10px;
+    list-style: none;
+    padding: 0;
+}
+
+#skills li {
+    background-color: #f5f5e9;
+    padding: 10px 15px;
+    border-radius: 8px;
+    font-weight: bold;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
 
 #connect {
     background-color: #f6f2e8;
@@ -205,7 +237,7 @@ li a:hover {
 
     li a {
         color: #022835;
-        font-size: 15px;
+        font-size: 16px;
         font-weight: 700;
     }
 
@@ -218,6 +250,7 @@ li a:hover {
     #about,
     #experience,
     #connect,
+    #skills,
     .job,
     .nav-container,
     .nav-container li {
@@ -234,6 +267,16 @@ li a:hover {
         margin-top: 20px;
         color: #022835;
     }
+
+    #skills ul {
+        grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+        gap: 8px;
+      }
+    
+      #skills li {
+        text-align: center;
+        padding: 12px;
+      }
 
     #connect {
         margin: 5px 0px 5px 0px;
