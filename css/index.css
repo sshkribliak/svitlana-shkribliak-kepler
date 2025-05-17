@@ -138,7 +138,7 @@ li a:hover {
     font-style: italic;
 }
 
-.copyright{
+.copyright {
     text-align: center;
     font-size: 0.9rem;
     padding: 10px;
@@ -184,7 +184,7 @@ li a:hover {
     margin-bottom: 10px;
 }
 
-#skills{
+#skills {
     background-color: #f6f2e8;
     border-radius: 10px;
     padding: 10px;
@@ -206,7 +206,7 @@ li a:hover {
     font-weight: bold;
     box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
     text-align: center;
-  }
+}
 
 #connect {
     background-color: #f6f2e8;
@@ -222,6 +222,107 @@ li a:hover {
     gap: 10px;
     justify-content: center;
 }
+
+#message-form {
+    border-radius: 10px;
+    margin: 10px 0px 10px 0px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#messages {
+    border-radius: 10px;
+    margin: 10px 0px 10px 0px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 5px;
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+    width: 100%;
+    max-width: 500px;
+    padding: 12px 15px;
+    margin: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    resize: vertical;
+}
+
+form button[type="submit"] {
+    padding: 12px 25px;
+    font-size: 1.1rem;
+    background-color: #0b4b60;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 10px;
+}
+
+form button[type="submit"]:hover,
+form button[type="submit"]:focus {
+    background-color: #094050;
+    outline: none;
+}
+
+#messages ul {
+    list-style: none;
+    /* Remove bullets */
+    padding: 0;
+    margin-top: 20px;
+}
+
+#messages li {
+    background-color: #f6f2e8;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 12px 15px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#messages li a {
+    font-weight: bold;
+    color: #0b4b60;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+#messages li span {
+    display: block;
+    margin-top: 5px;
+    color: #333;
+    flex-grow: 1;
+}
+
+#messages li button {
+    background-color: #c62828;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+#messages li button:hover {
+    background-color: #b71c1c;
+}
+
+form label {
+    /* display: block; */
+    font-weight: 600;
+    margin: 10px;
+    color: #0b4b60;
+    font-size: 1rem;
+}
+
 
 /* Mobile devices*/
 
@@ -239,6 +340,20 @@ li a:hover {
         color: #022835;
         font-size: 16px;
         font-weight: 700;
+    }
+
+    form input[type="text"],
+    form input[type="email"],
+    form textarea,
+    form button[type="submit"] {
+        font-size: 1.2rem;
+        padding: 15px 20px;
+        max-width: 95%;
+    }
+
+    #messages li span {
+        font-size: 1rem;
+        margin-bottom: 10px;
     }
 
     .job {
@@ -271,12 +386,12 @@ li a:hover {
     #skills ul {
         grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
         gap: 8px;
-      }
-    
-      #skills li {
+    }
+
+    #skills li {
         text-align: center;
         padding: 12px;
-      }
+    }
 
     #connect {
         margin: 5px 0px 5px 0px;

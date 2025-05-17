@@ -7,7 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Svitlana Shkribliak">
     <link rel="stylesheet" href="css/index.css">
-    <script src="index.js"></script>
 </head>
 
 <body>
@@ -29,6 +28,7 @@
             <li><a href="#skills">Skills</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#connect">Connect</a></li>
+            <li><a href="#message-form">Messages</a></li>
         </ul>
     </nav>
 
@@ -87,9 +87,31 @@
                     <img src="images/linkedin-icon.png" alt="linkedin icon" class="icon"></a>
             </span>
         </div>
-
     </section>
-    <script src="js/index.js"></script>
+
+    <section id="message-form">
+        <h2>Leave a Message</h2>
+        <form name="leave_message">
+
+            <label for="usersName">Name:</label><br>
+            <input type="text" name="usersName" required><br>
+
+            <label for="usersEmail">Email:</label><br>
+            <input type="email" name="usersEmail" required><br>
+
+            <label for="usersMessage">Message:</label><br>
+            <textarea name="usersMessage" required></textarea><br>
+
+            <button type="submit">Submit</button>
+
+        </form>
+    </section>
+
+    <section id="messages">
+        <h2>Messages</h2>
+        <ul></ul>
+    </section>
+<script src="js/index.js"></script>
 </body>
 
 </html>
