@@ -208,6 +208,10 @@ li a:hover {
     text-align: center;
 }
 
+#skills ul li:hover {
+  transform: scale(1.05);
+}
+
 #connect {
     background-color: #f6f2e8;
     border-radius: 10px;
@@ -315,11 +319,42 @@ form button[type="submit"]:focus {
     background-color: #b71c1c;
 }
 
+#projects {
+    background-color: #f6f2e8;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+}
+
+#projects ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#projects ul li {
+  background-color: #f5f5e9;
+  padding: 10px 15px;
+  border-radius: 8px;
+  color: black;
+  font-weight: 700;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+}
+
+#projects ul li:hover {
+  transform: scale(1.05);
+}
+
 form label {
     /* display: block; */
     font-weight: 600;
     margin: 10px;
-    color: #0b4b60;
+    color: black;
     font-size: 1rem;
 }
 
