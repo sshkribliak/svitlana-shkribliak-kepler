@@ -1,4 +1,3 @@
-
 let today = new Date();
 let thisYear = today.getFullYear();
 
@@ -13,7 +12,7 @@ copyright.innerHTML = `&copy; Svitlana Shkribliak ${thisYear}`;
 copyright.classList.add('copyright');
 footer.appendChild(copyright);
 
-let skills = ["HTML", "CSS", "JavaScript", "GitHub"];
+let skills = ["HTML", "CSS", "JavaScript", "GitHub", "Selenium", "TestNG"];
 let skillsSection = document.getElementById('skills');
 let skillsList = skillsSection.querySelector('ul');
 
@@ -61,22 +60,32 @@ fetch('https://api.github.com/users/sshkribliak/repos')
         console.log("GitHub Repositories:", repositories)
         let projectSection = document.getElementById('projects');
         let projectList = projectSection.querySelector('ul');
-
-        for (let i = 0; i < repositories.length; i++) {
+        repositories.forEach(repo => {
             let project = document.createElement('li');
-            project.innerText = repositories[i].name;
+            let link = document.createElement('a');
+            link.href = repo.html_url;
+            link.innerText = repo.name;
+            link.target = "_blank";
+            project.appendChild(link);
             projectList.appendChild(project);
-        }
+        });
     })
     .catch(error => {
         console.error("Error fetching repositories:", error);
     });
 
-let projectSection = document.getElementById('#projects');
-let projectList = projectSection.querySelector('ul');
+document.addEventListener("DOMContentLoaded", function () {
+    const hamburger = document.querySelector(".hamburger");
+    const navLinks = document.querySelector(".nav-links");
+    const links = document.querySelectorAll(".nav-links a");
 
-for (let i = 0; i < repositories.length; i++) {
-    let project = document.createElement('li');
-    project.innerText = repositories[i].name;
-    projectList.appendChild(project);
-}
+    hamburger.addEventListener("click", function () {
+        navLinks.classList.toggle("show");
+    });
+
+    links.forEach(link => {
+        link.addEventListener("click", function () {
+            navLinks.classList.remove("show");
+        });
+    });
+});
